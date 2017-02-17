@@ -1,0 +1,19 @@
+import junit.framework.Test;
+import junit.framework.TestSuite;
+
+public class CasosAutomatizadosWebDriver {
+
+  public static Test suite() {
+    TestSuite suite = new TestSuite();
+    suite.addTestSuite(convidarEmpresa.class);
+    suite.addTestSuite(depositaDoc.class);
+    suite.addTestSuite(importacaoLote.class);
+    suite.addTestSuite(modalConvidar.class);
+    suite.addTestSuite(testeLogin.class);
+    return suite;
+  }
+
+  public static void main(String[] args) {
+    junit.textui.TestRunner.run(suite());
+  }
+}
